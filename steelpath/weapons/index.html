@@ -1988,18 +1988,50 @@ Exemple : utiliser Saryn pour avoir une arme toxine, Nezha pour une arme feu, Me
 <li>nécessite d'équiper 3 <a href="https://wiki.warframe.com/w/Requiem_Mods">mods requiem</a> sur votre Parazon (en bas de l'arsenal), pour tester et trouver la bonne combinaison de 3 mods permettant de vaincre la liche (<a href="https://wiki.warframe.com/w/User:Emptylord/Requiem_Guide">guide strat requiem</a>)</li>
 <li>une fois la bonne combinaison trouvée, battre la liche en mission railjack sur <a href="https://wiki.warframe.com/w/Saturn_Proxima">Proxima de Saturne</a>. Utiliser Revenant et/ou silence et une arme qui tire vite (Dual Toxocyst Incarnon) pour se faciliter la vie. Tuer la liche pour obtenir son arme.</li>
 </ul>
+<pre class="mermaid"><code>graph TB
+A[MR 5 + War Within + Railjack Intrinsic 5] --&gt; B{Liche active ?}
+B --&gt; |Non| C{Statut désiré connu ?}
+C --&gt; |Non| D[Check liste progéniteurs]
+C --&gt; |Oui| E[Cassini, Saturne, Solo]
+E --&gt; F[Capture puis 10+ kills]
+F --&gt; G[Apparition Larve Kuva]
+G --&gt; H{Arme souhaitée ?}
+H --&gt; |Non| I[Extract]
+H --&gt; |Oui| J[Capturer Larve]
+I --&gt; E
+B --&gt; |Oui| AA{Mods requiem possédés ?}
+AA --&gt; |Non| AB{Farm reliques requiem}
+AB --&gt; AC[Déluge Kuva / Achats / Thralls de liche]
+AC --&gt; AB
+AA --&gt; |Oui| AE[Equiper 3 mods requiem aléatoires]
+AE --&gt; AF{Combinaison connue ?}
+AF --&gt; |Non| AG[Missions de liche]
+AG --&gt; AJ[Tuer thralls /Identifier 1er mot]
+AJ --&gt; AK[Mot identifié au début du parazon]
+AK --&gt; AL[Tester sur liche]
+AL --&gt; AM{Mot validé ?}
+AM --&gt; |Non| AN[Changer le mot d'emplacement]
+AM --&gt; |Oui| AO[Laisser le mot valide en place]
+AN --&gt; AP[Passer au mot suivant]
+AO --&gt; AP
+AP --&gt; AF
+AF --&gt; |Oui| AQ[Tuer liche Railjack Saturne]</code></pre>
 </details>
 <details class="note">
 <summary>Liches Corpus (Soeurs de Parvos / Tenet)</summary>
 <ul>
 <li>être MR5 minimum, avoir fait la <a href="https://wiki.warframe.com/w/The_War_Within">Guerre Intérieure</a> et l'<a href="https://wiki.warframe.com/w/Call_of_the_Tempestarii">Appel des Tempestarii</a></li>
-<li>faire apparaître un <a href="https://wiki.warframe.com/w/Candidate">Candidat</a>
-        - faire Hydra (Pluton), pendant la mission récupérer une <a href="https://wiki.warframe.com/w/Granum_Void#Mechanics">Couronne Granum Zenith</a> sur un [Trésorier](https://wiki.warframe.com/w/Treasurer
-        - refaire Hydra (Pluton) en solo de préférence (baisse la difficulté du Granum Void)
-        - donner la couronne à une grande statue de main dorée (Golden Hand Tribute)
-        - battre au minimum le 1er rang dans le Granum Void. 
-              - Utiliser des aoe (mesa/octavia = easy, arme aoe sur une corniche en bord de map...) 
-              - ou le <a href="https://wiki.warframe.com/w/Xoris">Xoris</a></li>
+<li>faire apparaître un <a href="https://wiki.warframe.com/w/Candidate">Candidat</a><ul>
+<li>faire Hydra (Pluton), pendant la mission récupérer une <a href="https://wiki.warframe.com/w/Granum_Void#Mechanics">Couronne Granum Zenith</a> sur un <a href="https://wiki.warframe.com/w/Treasurer">Trésorier</a></li>
+<li>refaire Hydra (Pluton) en solo de préférence (baisse la difficulté du Granum Void)</li>
+<li>donner la couronne à une grande statue de main dorée (Golden Hand Tribute)</li>
+<li>battre au minimum le 1er rang dans le Granum Void. <ul>
+<li>Utiliser des aoe (mesa/octavia = easy, arme aoe sur une corniche en bord de map...) </li>
+<li>ou le <a href="https://wiki.warframe.com/w/Xoris">Xoris</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>les missions à effectuer sont :<ul>
 <li>de niveau 55 à 110 selon le niveau de votre liche</li>
 <li>lieux : venux, phobos, jupiter, neptune, pluton (+forteresse kuva pour ouvrir vos <a href="https://wiki.warframe.com/w/Void_Relic#Requiem_Relics">reliques requiem</a>)</li>
@@ -2011,6 +2043,37 @@ Exemple : utiliser Saryn pour avoir une arme toxine, Nezha pour une arme feu, Me
 <li>nécessite d'équiper 3 <a href="https://wiki.warframe.com/w/Requiem_Mods">mods requiem</a> sur votre Parazon (en bas de l'arsenal), pour tester et trouver la bonne combinaison de 3 mods permettant de vaincre la liche (<a href="https://wiki.warframe.com/w/User:Emptylord/Requiem_Guide">guide strat requiem</a>)</li>
 <li>une fois la bonne combinaison trouvée et l'antivirus à 100%, battre la liche en mission railjack sur <a href="https://wiki.warframe.com/w/Neptune_Proxima">Proxima de Neptune</a>. Utiliser Revenant et/ou silence et une arme qui tire vite (Dual Toxocyst Incarnon) pour se faciliter la vie. Tuer la liche pour obtenir son arme.</li>
 </ul>
+<pre class="mermaid"><code>graph TB
+A[MR 5 + War Within + Railjack Intrinsic 5] --&gt; B{Liche active ?}
+B --&gt; |Non| C{Statut désiré connu ?}
+C --&gt; |Non| D[Check liste progéniteurs]
+C --&gt; |Oui| E[Hydra, Pluton, Solo]
+E --&gt; F[Repérer statue Main dorée]
+F --&gt; G[Utiliser Couronne Granum Zenith]
+G --&gt; H[Réussir au moins difficulté 1/3]
+H --&gt; I[Finir capture + tuer Trésorier]
+I --&gt; J[Apparition Candidat]
+J --&gt; K{Arme souhaitée ?}
+K --&gt; |Non| L[Extract]
+K --&gt; |Oui| M[Capturer Candidat]
+L --&gt; E
+B --&gt; |Oui| AA{Mods requiem possédés ?}
+AA --&gt; |Non| AB{Farm reliques requiem}
+AB --&gt; AC[Déluge Kuva / Achats / Thralls de liche]
+AC --&gt; AB
+AA --&gt; |Oui| AE[Equiper 3 mods requiem aléatoires]
+AE --&gt; AF{Combinaison connue ?}
+AF --&gt; |Non| AG[Missions de liche]
+AG --&gt; AJ[Tuer thralls /Identifier 1er mot]
+AJ --&gt; AK[Mot identifié au début du parazon]
+AK --&gt; AL[Tester sur liche]
+AL --&gt; AM{Mot validé ?}
+AM --&gt; |Non| AN[Changer le mot d'emplacement]
+AM --&gt; |Oui| AO[Laisser le mot valide en place]
+AN --&gt; AP[Passer au mot suivant]
+AO --&gt; AP
+AP --&gt; AF
+AF --&gt; |Oui| AQ[Tuer liche Railjack Neptune]</code></pre>
 </details>
 <details class="note">
 <summary>Liches Infestées (Coda)</summary>
@@ -2026,6 +2089,24 @@ Exemple : utiliser Saryn pour avoir une arme toxine, Nezha pour une arme feu, Me
 <li>nécessite seulement 1 Antivirus valable pour battre une liche, on peut les tester 3 par 3 puis changer les inutiles pour des mods de <a href="https://wiki.warframe.com/w/Potency_Mods">Potency</a> pour booster l'antivirus</li>
 <li>une fois la bonne combinaison trouvée, battre la liche en mission railjack sur <a href="https://wiki.warframe.com/w/Earth_Proxima">Proxima de la Terre</a>. Utiliser Revenant et/ou silence et une arme qui tire vite (Dual Toxocyst Incarnon) pour se faciliter la vie. Tuer la liche pour obtenir son arme.</li>
 </ul>
+<pre class="mermaid"><code>graph TB
+A[Accès Hex] --&gt; B{Antivirus possédés ?}    
+B --&gt; |Non| C[Bounty Antivirus]
+C --&gt; B
+B --&gt; |Oui| D{Liche Coda active ?}
+D --&gt; |Non| E[Capture Legacyte Solo]
+E --&gt; F[Ramasser Mixtape Jaune]
+F --&gt; G[Amener Mixtape à un terminal]
+G --&gt; D
+D --&gt; |Oui| H[Antivirus identifié ?]
+H --&gt; |Non| I[Equiper 3 Antivirus]
+I --&gt; J[Missions 1999 Coda]
+J --&gt; K[Test Antivirus sur Liche]
+K --&gt; H
+H --&gt; |Oui| L[Equiper 1 Antivirus + 2 Potency]
+L --&gt; M[Antivirus 100%]
+M --&gt; N[Tuer Licher Railjack Terre]
+N --&gt; O[MR17, Acheter armes chez Eleanor]</code></pre>
 </details>
 <h2 id="priming"><strong>Priming</strong></h2>
 <p>Le <a href="https://www.youtube.com/watch?v=oj1SnZOxBp4"><strong>priming</strong></a> consiste à "préparer" des ennemis avec une source de statuts pour qu'une autre arme dégâts bénéficiant de ces statuts le détruise encore plus fort juste après. Gros boost de dégâts en perspective, ça peut permettre de passer un cap (trash mobs Steel Path, mini-boss comme les démolystes en perturbation).</p>
@@ -2061,7 +2142,7 @@ Exemple : utiliser Saryn pour avoir une arme toxine, Nezha pour une arme feu, Me
 </ul>
 </li>
 </ul>
-<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-08-25'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-08-25T22:17:50+04:00'>2025-08-25</time></span><span data-tippy-content data-tippy-raw='2025-09-01'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-09-01T06:17:43.155320+04:00'>2025-09-01</time></span></div></div>
+<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-08-25'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-08-25T22:17:50+04:00'>2025-08-25</time></span><span data-tippy-content data-tippy-raw='2025-09-04'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-09-04T13:59:25.454043+04:00'>2025-09-04</time></span></div></div>
 
 
 
